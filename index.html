@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="./image/student.png" alt="Student Image">
+        </div>
+        <form class="container">
+            <h1 class="title">Student Form</h1>
+            <table class="table-container">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="Enter Your Age" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input clas="gender" type="radio" id="Male" name="gender" value="Male">
+                        <label for="male">Male</label>
+
+                        <input clas="gender" type="radio" id="Female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course</label></td>
+                    <td>
+                        <select id="course" name="course" required>
+                            <option disabled selected>Select Your Course</option>
+                            <option>Fullstack</option>
+                            <option>ReactJS</option>
+                            <option>Front-end</option>
+                            <option>Python</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td class="submit" colspan="2">Submit</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <table class="data-table">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
